@@ -5,7 +5,8 @@
   "main": "server.js",
   "dependencies": {
     "express": "^4.13.4",
-    "socket.io": "^1.4.5"
+    "socket.io": "^1.4.5",
+    "mysql": "^2.3.2"
   },
   "engine": {
     "node": "*",
