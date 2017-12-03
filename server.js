@@ -11,10 +11,10 @@ var io = require("socket.io")(server);
 var mysql = require("mysql");
 //When the server recieves an http get request it will send the index.html document to the client.
 app.get("/",function(req,res){
-	res.sendFile(__dirname + "/client/index.html");
+	res.sendFile(__dirname + "/views/index.html");
 });
 //Allows the client to request static files from the client directory stored at the server.
-app.use("/client",express.static(__dirname + "/client"));
+app.use("/views",express.static(__dirname + "/views"));
 //The server begins listening on the port 2000
 server.listen(2000);
 //The server creates a connection with the database using some predefined credentials
